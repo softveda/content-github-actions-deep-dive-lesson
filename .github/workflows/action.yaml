@@ -23,7 +23,7 @@ jobs:
         run: |
             cd function
             zip -r ../${{ github.sha }}.zip .
-      - name: Archice artifact
+      - name: Archive artifact
         uses: actions/upload-artifact@v3.1.2
         with:
           name: zipped-bundle
